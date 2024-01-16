@@ -83,15 +83,15 @@ print('==============================')
 
 most_points = max(gryffindor, ravenclaw, hufflepuff, slytherin)
 
-print('============================================================')
+print('============================================')
 
 if gryffindor == most_points:
-  print('🦁 Gryffindor is the house with the most points!')
+  print('🦁 Gryffindor is your new house!')
 elif ravenclaw == most_points:
-  print('🦅 Ravenclaw is the house with the most points!')
+  print('🦅 Ravenclaw is your new house!')
 elif hufflepuff == most_points:
-  print('🦡 Hufflepuff is the house with the most points!')
+  print('🦡 Hufflepuff is your new house!')
 else:
-  print('🐍 Slytherin is the house with the most points!')
+  print('🐍 Slytherin is your new house!')
 
-print('============================================================')
+print('============================================')
