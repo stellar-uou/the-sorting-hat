@@ -1,0 +1,97 @@
+gryffindor = 0
+hufflepuff = 0
+ravenclaw = 0
+slytherin = 0
+
+print('===============')
+print('The Sorting Hat')
+print('===============')
+
+print('==============================')
+
+dawn_dusk = int(input('''
+Q1) Do you like Dawn or Dusk?
+    1) Dawn
+    2) Dusk
+'''))
+
+print('==============================')
+
+if dawn_dusk == 1:
+  gryffindor += 1
+  ravenclaw += 1
+elif dawn_dusk == 2:
+  hufflepuff += 1
+  slytherin += 1
+else:
+  print("Wrong input.")
+
+print('==============================')
+
+remember = int(input('''
+Q2) When I’m dead, I want people to remember me as:
+    1) The Good
+    2) The Great
+    3) The Wise
+    4) The Bold 
+'''))
+
+print('==============================')
+
+if remember == 1:
+  hufflepuff += 2
+elif remember == 2:
+  slytherin += 2
+elif remember == 3:
+  ravenclaw += 2
+elif remember == 4:
+  gryffindor += 2
+else:
+  print("Wrong input.")
+
+print('==============================')
+
+instrument = int(input('''
+Q3) Which kind of instrument most pleases your ear?
+    1) The violin
+    2) The trumpet
+    3) The piano
+    4) The drum
+'''))
+
+print('==============================')
+
+if instrument == 1:
+  slytherin += 4
+elif remember == 2:
+  hufflepuff += 4
+elif remember == 3:
+  ravenclaw += 4
+elif remember == 4:
+  gryffindor += 4
+else:
+  print("Wrong input.")
+
+print('==============================')
+
+print("Gryffindor: ", gryffindor)
+print("Ravenclaw: ", ravenclaw)
+print("Hufflepuff: ", hufflepuff)
+print("Slytherin: ", slytherin)
+
+print('==============================')
+
+most_points = max(gryffindor, ravenclaw, hufflepuff, slytherin)
+
+print('============================================================')
+
+if gryffindor == most_points:
+  print('🦁 Gryffindor is the house with the most points!')
+elif ravenclaw == most_points:
+  print('🦅 Ravenclaw is the house with the most points!')
+elif hufflepuff == most_points:
+  print('🦡 Hufflepuff is the house with the most points!')
+else:
+  print('🐍 Slytherin is the house with the most points!')
+
+print('============================================================')
